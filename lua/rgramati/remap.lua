@@ -32,8 +32,17 @@ vim.keymap.set("n", "<leader>p", "\"+p")
 vim.keymap.set("i", "\"", "\"\"<Left>")
 vim.keymap.set("i", "\'", "\'\'<Left>")
 
+-- (Normal) Commenting/Uncommenting
+vim.keymap.set("n", "<leader>.", "0:s/^/\\/\\/ /<CR>")
+vim.keymap.set("n", "<leader>,", "0:s/^\\/\\/ //<CR>")
+
+-- (Visual) Block commenting/uncommenting
+vim.keymap.set("v", "<leader>.", ":s/^/\\/\\/ /<CR>gv")
+vim.keymap.set("v", "<leader>,", ":s/^\\/\\/ //<CR>gv")
+vim.keymap.set("n", "<Leader>m", "d/}<CR>x")
+
 -- (Normal) Append to current word, Subtitute from input1 to input2, Subsitute in visual block
-vim.keymap.set("n", "<leader>sa", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/g<Left><Left>]])
+vim.keymap.set("n", "<leader>sa", [[:%s/\<<c-r><c-w>\>/<c-r><c-w>/g<Left><Left>]])
 vim.keymap.set("n", "<leader>ss", function()
 	local from = vim.fn.input("subtitute ? ")
 	local to = vim.fn.input("with ? ")
