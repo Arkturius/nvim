@@ -3,7 +3,7 @@
 small group of plugins that make my life easier   
 add/modify your personal features as you wish   
 
-- **[pcker](https://github.com/lewis6991/pckr.nvim)** : plugin manager
+- **[lazy](https://github.com/folke/lazy.nvim)** : plugin manager
 - **[telescope](https://github.com/nvim-telescope/telescope.nvim)** : file navigation tool
 - **[harpoon](https://github.com/ThePrimeagen/harpoon)** : workspace enclosing
 - **[undotree](https://github.com/mbbill/undotree)** : easy undoing
