@@ -16,4 +16,4 @@ vim.keymap.set('n', '<Leader>t', function()
 	require("sandbox").twindow()
 end)
 
-vim.keymap.set('t', '<Leader>t', [[<C-\><C-n>:q<CR>]], { noremap = true, silent = true })
+vim.keymap.set('t', '<C-c>', [[<C-\><C-n>:q<CR>]], { noremap = true, silent = true })
