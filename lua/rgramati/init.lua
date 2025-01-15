@@ -14,6 +14,7 @@ vim.api.nvim_create_autocmd('TermOpen', {
 
 vim.keymap.set('n', '<Leader>t', function()
 	require("sandbox").twindow()
+	vim.api.nvim_feedkeys("clear\n", 'v', true)
 end)
 
 vim.keymap.set('t', '<C-c>', [[<C-\><C-n>:q<CR>]], { noremap = true, silent = true })
